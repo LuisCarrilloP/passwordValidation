@@ -1,4 +1,4 @@
-@import url('https://fonst.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -75,10 +75,17 @@ body {
   font-size: .85em;
   transition: .5s;
 }
+.validation ul li.valid {
+  color: rgba(255, 255, 255, .5);
+}
 .validation ul li::before {
   content: '\f192';
-  font-family: fontAwesome;
   width: 20px;
   height: 10px;
+  font-family: fontAwesome;
   display: inline-flex;
+}
+.validation ul li.valid::before {
+  content: '\f00c';
+  color: #0f0;
 }
